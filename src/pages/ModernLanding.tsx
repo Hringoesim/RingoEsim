@@ -21,29 +21,29 @@ export default function ModernLanding() {
               Your Number.{' '}
               <span className="text-sunset">Everywhere.</span>
             </h1>
-            
+
             {/* Subheadline */}
             <p className="text-xl sm:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Voice-enabled travel eSIM for digital nomads. Make calls, receive SMS, 
+              Voice-enabled travel eSIM for digital nomads. Make calls, receive SMS,
               stay connected in 180+ countries.
             </p>
-            
+
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-              <Button 
+              <Button
                 className="btn-coral text-lg px-10 py-6 btn-glow"
                 onClick={() => setIsModalOpen(true)}
               >
                 Join Waitlist
               </Button>
-              <Button 
+              <Button
                 className="btn-outline-white text-lg px-10 py-6"
                 onClick={scrollToPricing}
               >
                 View Plans
               </Button>
             </div>
-            
+
             {/* Trust Indicators */}
             <div className="pt-12 space-y-4">
               <div className="flex flex-wrap justify-center items-center gap-8 text-yellow-200">
@@ -56,7 +56,7 @@ export default function ModernLanding() {
                   <span className="font-semibold">Early access: €10 off first month</span>
                 </div>
               </div>
-              
+
               <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-yellow-300/80">
                 <span className="flex items-center gap-1">
                   <Shield className="w-4 h-4" />
@@ -74,7 +74,7 @@ export default function ModernLanding() {
             </div>
           </div>
         </div>
-        
+
         {/* Floating Phone Mockup */}
         <div className="absolute right-10 top-1/2 transform -translate-y-1/2 hidden lg:block">
           <div className="float-animation">
@@ -110,7 +110,7 @@ export default function ModernLanding() {
       </section>
 
       {/* Problem/Solution Section */}
-      <section className="section-padding bg-background-lighter">
+      <section className="section-padding background-lighter">
         <div className="container-max">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Problem */}
@@ -119,43 +119,43 @@ export default function ModernLanding() {
                 <div className="w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center mx-auto">
                   <Phone className="w-8 h-8 text-red-400" />
                 </div>
-                <h3 className="text-2xl font-bold text-white">The Problem</h3>
-                <div className="space-y-4 text-white/80">
+                <h3 className="text-2xl font-bold text-slate-900">The Problem</h3>
+                <div className="space-y-4 text-slate-700">
                   <p className="flex items-center justify-between">
                     <span>Roaming costs</span>
-                    <span className="text-red-400 font-bold">€6/minute</span>
+                    <span className="text-red-600 font-bold">€6/minute</span>
                   </p>
                   <p className="flex items-center justify-between">
                     <span>Airalo voice calls</span>
-                    <span className="text-red-400 font-bold">Not supported</span>
+                    <span className="text-red-600 font-bold">Not supported</span>
                   </p>
                   <p className="flex items-center justify-between">
                     <span>Banking SMS abroad</span>
-                    <span className="text-red-400 font-bold">Blocked</span>
+                    <span className="text-red-600 font-bold">Blocked</span>
                   </p>
                 </div>
               </div>
             </div>
-            
+
             {/* Solution */}
             <div className="glass-card p-8 rounded-2xl">
               <div className="text-center space-y-6">
                 <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto">
-                  <Phone className="w-8 h-8 text-green-400" />
+                  <Phone className="w-8 h-8 text-green-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-white">The Solution</h3>
-                <div className="space-y-4 text-white/80">
+                <h3 className="text-2xl font-bold text-slate-900">The Solution</h3>
+                <div className="space-y-4 text-slate-700">
                   <p className="flex items-center justify-between">
                     <span>Unlimited voice</span>
-                    <span className="text-green-400 font-bold">€39.90/month</span>
+                    <span className="text-green-600 font-bold">€39.90/month</span>
                   </p>
                   <p className="flex items-center justify-between">
                     <span>Native calling</span>
-                    <span className="text-green-400 font-bold">No app required</span>
+                    <span className="text-green-600 font-bold">No app required</span>
                   </p>
                   <p className="flex items-center justify-between">
                     <span>Permanent EU number</span>
-                    <span className="text-green-400 font-bold">For 2FA</span>
+                    <span className="text-green-600 font-bold">For 2FA</span>
                   </p>
                 </div>
               </div>
@@ -172,7 +172,7 @@ export default function ModernLanding() {
               Everything You Need to Stay Connected
             </h2>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
@@ -219,9 +219,9 @@ export default function ModernLanding() {
       </section>
 
       {/* Waitlist Modal */}
-      <WaitlistModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
+      <WaitlistModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
       />
     </div>
   );
