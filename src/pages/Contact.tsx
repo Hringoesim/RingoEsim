@@ -23,12 +23,12 @@ export default function Contact() {
   const { toast } = useToast();
 
   const subjects = [
-    'General Inquiry',
-    'Pilot Program Questions',
-    'Partnership Interest',
-    'Press/Media',
-    'Technical Support',
-    'Other',
+    '💬 General Inquiry',
+    '🚀 Pilot Program Questions',
+    '🤝 Partnership Interest',
+    '📰 Press/Media',
+    '🔧 Technical Support',
+    '📋 Other',
   ];
 
   const validateEmail = (email: string) => {
@@ -74,7 +74,7 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       return;
     }
@@ -153,7 +153,7 @@ export default function Contact() {
               <div>
                 <h2 className="text-2xl font-bold mb-4">Let's Talk</h2>
                 <p className="text-muted-foreground mb-6">
-                  Whether you have questions about our pilot program, want to explore partnerships, 
+                  Whether you have questions about our pilot program, want to explore partnerships,
                   or need technical support, we're here to help.
                 </p>
               </div>
